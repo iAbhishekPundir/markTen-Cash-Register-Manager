@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cash Register</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+        <nav class="navigation">
+            <h1 class="heading">Cash Register Manager</h1>
+        </nav>
+            
+        <p class="description">
+            You can enter the bill amount and the cash you give to the shopkeeper and then check the minimum number of notes you will receive back.
+        </p>
+
+        <label for="bill-amount"> Bill amount - </label>
+        <input id="bill-amount" placeholder="Enter the bill amount" type="number" />
+        
+
+        
+        <div id="cash">
+            <label for="cash-given"> Cash given - </label>
+            <input id="cash-given" placeholder="Enter the cash given amount" type="number" />
+
+            <button id="check-btn"> Check </button>
+        </div>
+
+        <p id="error-message"></p>
+
+        <table class="change-table">
+            <caption>
+                Return Change
+            </caption>
+            <tbody>
+                <tr>
+                    <th>Number of notes</th>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                    <td class="no-of-notes"></td>
+                </tr>
+
+                <tr>
+                    <th>Notes available</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+        <footer class="footer">
+            <div class="footer-header">connect with me</div>
+            <ul class="social-links list-non-bullet">
+                <li class="list-item-inline"><a class="link" href="https://github.com/iAbhishekPundir" target="_blank">github</a></li>
+                <li class="list-item-inline"><a class="link" href="https://twitter.com/abhishek_webdev" target="_blank">twitter</a></li>
+                <li class="list-item-inline"><a class="link" href="https://www.linkedin.com/in/abhishek-pundir-237565170/" target="_blank">linkedin</a></li>
+    
+            </ul>
+        </footer>
+
+    
+        <script src="index.js"></script>
+
+    </body>
+    
+
+</html>
