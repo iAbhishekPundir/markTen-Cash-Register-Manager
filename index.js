@@ -16,10 +16,12 @@ checkBtn.addEventListener("click", ()=> {
         if (cashAmt > billAmt) {
             const amountToBeReturned = cashAmt - billAmt;
             calculateChange(amountToBeReturned);
-        } else if (cashAmt == billAmt) {
+        } 
+        else if (cashAmt == billAmt) {
             showMsg("No change required");
-        } else {
-            changeTable.style.display="none";
+        } 
+        else {
+            // changeTable.style.display="none";
             showMsg("Cash given should be greater than or equal to the bill amount.")
         }
 
