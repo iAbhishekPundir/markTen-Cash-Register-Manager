@@ -46,6 +46,7 @@ input {
 
 button {
     padding: 0.7rem;
+    color: white;
     background-color: var(--primary-color);
     border-radius: 1rem;
     font-size: medium;
@@ -54,6 +55,7 @@ button {
 
 #error-message {
     font-weight: bold;
+    color: rgb(222, 108, 51);
 }
 
 table {
