@@ -19,6 +19,9 @@ checkBtn.addEventListener("click", ()=> {
             var retAmt = "Return  ₹"+ amountToBeReturned;
             showMsg(retAmt);
         } 
+        else if(billAmt <=0 || cashAmt <=0){
+            showMsg("Please enter the cash given  and value must be > 0");
+        }
         else if (cashAmt == billAmt) {
             showMsg("No change required");
         } 
