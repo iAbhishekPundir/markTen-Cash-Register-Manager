@@ -22,13 +22,16 @@ checkBtn.addEventListener("click", ()=> {
         else if (cashAmt == billAmt) {
             showMsg("No change required");
         } 
-        else {
+        else if(cashAmt == 0){
             // changeTable.style.display="none";
-            showMsg("Please pay the full amount")
+            showMsg("Please enter the Cash given and amount should be greater than 0");
+        }
+        else {
+            showMsg("Please...Pay the full bill amount");
         }
 
     } else {
-        showMsg("Invalid Bill Amount");
+        showMsg("Enter the Bill amount and amount should be greater than 0");
     }
 });
 
